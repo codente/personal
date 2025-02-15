@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 400;
+    src: 
+    url(fonts/sofiapro-light-webfont.woff2) format("woff2"), 
+    url(fonts/sofiapro-light-webfont.woff) format("woff");
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, .29), rgba(0, 0, 0, .29)), radial-gradient(#474bff 2px, transparent 0);
+    background-color: #47d3ff;
+    background-size: 32px 32px;
+    font-family: Sofia Pro, Helvetica Neue, sans-serif
+}
+
+a,
+a:visited {
+    color: #474bff
+}
+
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+header h1 {
+    animation: shadow-dance 2s infinite;
+    color: #fff;
+    font-size: 4rem;
+    text-shadow: 5px 5px 0 #47d3ff, 10px 10px 0 #474bff
+}
+
+@keyframes shadow-dance {
+
+    0%,
+    to {
+        text-shadow: 5px 5px 0 #47d3ff, 10px 10px 0 #474bff
+    }
+
+    50% {
+        text-shadow: -5px -5px 0 #474bff, -10px -10px 0 #47d3ff
+    }
+}
+
+.sites {
+    row-gap: 1rem
+}
+
+.site,
+.sites {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.site {
+    align-content: center;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px #000;
+    padding: 1rem
+}
